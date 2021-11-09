@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Club {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String address;

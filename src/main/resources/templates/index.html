@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Club</title>
+</head>
+<body>
+    <h2>REST API webszolgáltatásai</h2>
+
+<table>
+    <tr>
+        <th>Metódus</th>
+        <th>URL</th>
+        <th>Szolgáltatás</th>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td><a href="/categories"> /categories </a> </td>
+        <td>Kategóriák listája</td>
+    </tr>
+        <td>GET</td>
+        <td><a href="/categories/1"> /categories/{id} </a> </td>
+        <td>Egy kategória</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td><a href="/categories/1/clubs"> /categories/{id}/clubs </a> </td>
+        <td>Egy kategória szórakozó helyei</td>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>/categories</td>
+        <td>Új kategória létrehozása</td>
+    </tr>
+    <tr>
+        <td>Delete</td>
+        <td>/categories/{id}</td>
+        <td>Kategória törlése</td>
+    </tr>
+    <tr>
+        <td>Patch</td>
+        <td>/categories/{id}/{agelimit}</td>
+        <td>Kategória módosítása (alsó korhatár)</td>
+    </tr>
+</table>
+</body>
+</html>

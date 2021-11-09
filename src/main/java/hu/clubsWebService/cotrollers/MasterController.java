@@ -20,11 +20,7 @@ public class MasterController {
 
     @GetMapping("/")
     public String home(){
-        return "ClubService";
+        return "index";
     }
 
-    @GetMapping("/categories")
-    public List<Category> getCategories(){
-        return categoryService.getCategories();
-    }
 }
