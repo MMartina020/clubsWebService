@@ -11,17 +11,18 @@ import java.util.List;
 @RestController
 public class MasterController {
 
-    private CategoryService cetegoryService;
+    private CategoryService categoryService;
 
     @Autowired
-    public void setCetegoryService(CategoryService cetegoryService) {
-        this.cetegoryService = cetegoryService;
+    public void setCategoryService(CategoryService categoryService) {
+        this.categoryService = categoryService;
     }
 
     @GetMapping("/")
     public String home(){
         return "ClubService";
     }
+
     @GetMapping("/categories")
     public List<Category> getCategories(){
         return categoryService.getCategories();
